@@ -1,9 +1,10 @@
-import webbrowser
 import os
+import webbrowser
+from colorama import Fore, Style
 
 os.system("clear")
 
-print("""
+print(Fore.LIGHTBLUE_EX +"""
                          _      _                _    _             
                         | |    | |              | |  (_)            
   __ _  ___   ___   __ _| | ___| |__   __ _  ___| | ___ _ __   __ _ 
@@ -14,7 +15,7 @@ print("""
  |___/             |___/                                      |___/ 
 """)
 
-print("""
+print(Fore.LIGHTRED_EX +"""
 [1] Publicly exposed documents
 [2] Directory listing vulnerabilities 
 [3] Configuration files exposed
@@ -31,11 +32,11 @@ print("""
 [14] Signup pages
 """)
 
-print("""
+print(Fore.LIGHTYELLOW_EX +"""
 Select one of our 14 Google Dorks
 """)
 
-option = input("option=> ")
+option = input(Fore.GREEN+ "option=> ")
 
 if option == "1" : 
     target = input("target=> ")
