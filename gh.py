@@ -35,61 +35,61 @@ print("""
 Select one of our 14 Google Dorks
 """)
 
-start = input("option=> ")
+option = input("option=> ")
 
-if start == "1" : 
+if option == "1" : 
     target = input("target=> ")
     dork = (target +" ext:doc | ext:docx | ext:odt | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv")
 
-if start == "2" :
+if option == "2" :
     target = input("target=> ")
     dork = (target +" intitle:index.of")
 
-if start == "3" : 
+if option == "3" : 
     target = input("target => ")
     dork = (target +" ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:env")
 
-if start == "4" : 
+if option == "4" : 
     target = input("target => ")
     dork = (target +" ext:sql | ext:dbf | ext:mdb")
 
-if start == "5" : 
+if option == "5" : 
     target = input("target => ")
     dork = (target +" ext:log")
 
-if start == "6" : 
+if option == "6" : 
     target = input("target => ")
     dork = (target +" ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup")
 
-if start == "7" : 
+if option == "7" : 
     target= input("target => ")
     dork = (target +' inurl:login | inurl:signin | intitle:Login | intitle:"sign in" | inurl:auth')
 
-if start == "8" : 
+if option == "8" : 
     target= input("target => ")
     dork = (target +' intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"')
 
-if start == "9" : 
+if option == "9" : 
     target= input("target => ")
     dork = (target +' "PHP Parse error" | "PHP Warning" | "PHP Error"')
 
-if start == "10" : 
+if option == "10" : 
     target= input("target => ")
     dork = (target +' ext:php intitle:phpinfo "published by the PHP Group"')
 
-if start == "11" : 
+if option == "11" : 
     target = input("target => ")
     dork = (" pastebin.com | site:paste2.org | site:pastehtml.com | site:slexy.org | site:snipplr.com | site:snipt.net | site:textsnip.com | site:bitpaste.app | site:justpaste.it | site:heypasteit.com | site:hastebin.com | site:dpaste.org | site:dpaste.com | site:codepad.org | site:jsitor.com | site:codepen.io | site:jsfiddle.net | site:dotnetfiddle.net | site:phpfiddle.org | site:ide.geeksforgeeks.org | site:repl.it | site:ideone.com | site:paste.debian.net | site:paste.org | site:paste.org.ru | site:codebeautify.org  | site:codeshare.io | site:trello.com " + "\"" + target + "\"")
 
-if start == "12" : 
+if option == "12" : 
     target = input("target => ")
     dork = (" github.com | site:gitlab.com " + "\"" + target + "\"")
 
-if start == "13" : 
+if option == "13" : 
     target = input("target => ")
     dork = (" stackoverflow.com " + "\"" + target + "\"")
 
-if start == "14" : 
+if option == "14" : 
     target= input("target => ")
     dork = (target +" ext:php inurl:signup | inurl:register | intitle:Signup")
 
